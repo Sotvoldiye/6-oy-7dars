@@ -491,7 +491,7 @@ img {
   font-size: var(--spacing-200);
 }
 
-@media (max-width: 768px), (min-width: 375px) {
+@media (max-width: 768px) {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
