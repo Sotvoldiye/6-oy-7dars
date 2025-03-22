@@ -14,6 +14,7 @@ function App() {
     <div className="container grid-container">
  <ProductList desserts={desserts} isPending={isPending}/>
       <YourCard />
+      <div className="overfollow"></div>
     </div>
   );
 }

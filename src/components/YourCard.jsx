@@ -1,19 +1,21 @@
 import React, { useState } from 'react'
-// const [modal, setModal] = useState(true)
+import Modal from './Modal'
+import Owerfollow from './owerfollow'
 
 function YourCard() {
+  const [modal, setModal] = useState(false)
   return (
     <div className=''>
     <div className="yourCard-container">
     <div className="yourCard_title">
       Your Cart (0)
       </div>
-{/* <div className="yourCard-img-text">
+<div className="yourCard-img-text">
 <img className='yourCardImg' src="./images/illustration-empty-cart.svg" alt="" />
       <p className='yourCardWarningMessage'>
       Your added items will appear here
       </p>
-</div> */}
+</div>
      <div className="yourCardList">
       <div className="cardListItem">
       <div className="yourCardItem">
@@ -45,10 +47,13 @@ function YourCard() {
         <img src="./images/icon-carbon-neutral.svg" alt="" />
       <p>This is a <strong> carbon-neutral</strong>  delivery</p>
       </div>
-      <button   className='modalButton'>Confirm Order</button>
+      <button onClick={()=> setModal(true)}  className='modalButton'>Confirm Order</button>
      </div>
     </div>
+    {modal &&  <><Modal modal={modal} setModal={setModal}/> <Owerfollow/> </>
+    }
     </div>
+    
   )
 }
 
