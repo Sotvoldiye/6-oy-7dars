@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+// const [modal, setModal] = useState(true)
 
 function YourCard() {
   return (
@@ -44,7 +45,7 @@ function YourCard() {
         <img src="./images/icon-carbon-neutral.svg" alt="" />
       <p>This is a <strong> carbon-neutral</strong>  delivery</p>
       </div>
-      <button className='modalButton'>Confirm Order</button>
+      <button   className='modalButton'>Confirm Order</button>
      </div>
     </div>
     </div>

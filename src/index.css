@@ -166,8 +166,8 @@ img {
   color: black;
   border: 1px solid var(--color-rose-400);
   border-radius: 999px;
-  font-size: var(--line-height-preset-4);
-  font-weight: bold;
+  font-size: var(--font-size-preset-4);
+  font-weight: 600;
   cursor: pointer;
   z-index: 2;
 }
@@ -187,9 +187,9 @@ img {
   bottom: -15px; 
   left: 50%;
   transform: translateX(-50%);
-  background-color:var(--color-white);
   gap: var(--spacing-100);
-  color: black;
+  color: var(--color-white);
+  font-size: var(--font-size-preset-4);
   border-radius: 999px;
   z-index: 11;
   background-color: var(--color-red);
@@ -228,7 +228,7 @@ padding: 3.75px;
 }
 
 .product-title{
-  font-size: var(--line-height-preset-4);
+  font-size: var(--font-size-preset-4);
   font-weight:  400;
   color: var(--color-rose-500);
   line-height: 100%;
@@ -387,4 +387,7 @@ height: 17.5px;
   height: 100%;
   background-color:var(--color-red);
   border:none;
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: var(--spacing-200)
 }
