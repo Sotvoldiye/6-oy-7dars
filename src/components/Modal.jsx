@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Modal({modal, setModal}) {
+ export default function Modal({modal, setModal}) {
   return (
     <div className='modal'>
       <div>
@@ -47,4 +47,4 @@ function Modal({modal, setModal}) {
   )
 }
 
-export default Modal
+// export default Modal
