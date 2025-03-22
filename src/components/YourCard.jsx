@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Modal from './Modal'
-import Owerfollow from './owerfollow'
 
 function YourCard() {
   const [modal, setModal] = useState(false)
@@ -50,7 +49,7 @@ function YourCard() {
       <button onClick={()=> setModal(true)}  className='modalButton'>Confirm Order</button>
      </div>
     </div>
-    {modal &&  <><Modal modal={modal} setModal={setModal}/> <Owerfollow/> </>
+    {modal &&  <><Modal modal={modal} setModal={setModal}/>  </>
     }
     </div>
     
