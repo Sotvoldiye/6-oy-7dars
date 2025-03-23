@@ -16,7 +16,7 @@ export const useFetch = (url) => {
 
         const data = await req.json();
         setData(data);
-      } catch (err) { // ✅ error ni parametr sifatida olish kerak
+      } catch (err) { 
         console.log(err.message);
         setError(err.message);
       }
